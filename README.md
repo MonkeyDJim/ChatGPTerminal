@@ -1,5 +1,5 @@
 # GPTerminal-3
-GPTerminal-3 est un programme permettant de communiquer avec l'API de GPT-3.
+GPTerminal-3 est un programme permettant de communiquer avec l'API de GPT-3 dans un terminal.
 
 En se connectant à l'API via requête HTML grâçe au module axios, GPTerminal-3 vous permet d'utiliser toute la puissance de GPT-3 d'OpenAI en faisant le moins de requêtes possible !
 

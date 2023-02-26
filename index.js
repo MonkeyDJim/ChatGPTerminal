@@ -4,7 +4,7 @@ const sendMessageToChatGPT = async (message) => {
   const config = {
     headers: {
       "Content-Type": "application/json",
-      Authorization: "<YOUR_API_KEY>",
+      Authorization: "Bearer <YOUR_API_KEY>",
     },
   };
 

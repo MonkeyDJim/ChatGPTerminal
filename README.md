@@ -7,3 +7,6 @@ Pour se connecter à l'API, il vous faut un compte OpenAI et acceder à l'onglet
 Cliquez maintenant sur "Create new secret key" et copiez la clé dans index.js à la place de <YOUR_API_KEY>.
 
 Vous êtes maintenant prêts à interagir avec GPT-3 !
+
+# Requierments
+Vous avez besoin d'installer le module "axios" pour lancer le programme : `npm i axios`

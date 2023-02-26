@@ -9,4 +9,4 @@ Cliquez maintenant sur "Create new secret key" et copiez la clé dans index.js �
 Vous êtes maintenant prêts à interagir avec GPT-3 !
 
 # Requierments
-Vous avez besoin d'installer le module "axios" pour lancer le programme : `npm i axios`
+Vous avez besoin d'installer les modules "axios" et "inquirer" pour lancer le programme : `npm i axios` `npm i inquirer@8.2.3`

@@ -10,3 +10,6 @@ Vous êtes maintenant prêts à interagir avec GPT-3 !
 
 # Requierments
 Vous avez besoin d'installer les modules "axios" et "inquirer" pour lancer le programme : `npm i axios` `npm i inquirer@8.2.3`
+
+# Remeciments
+Merci à @johan-perso pour son aide sur ce projet.

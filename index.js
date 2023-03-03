@@ -10,9 +10,10 @@ const sendMessageToChatGPT = async (message) => {
 
   try {
     const response = await axios.post(
-      "https://api.openai.com/v1/engines/text-davinci-003/completions",
+      "https://api.openai.com/v1/chat/completions",
       {
-        prompt: message,
+        model: "gpt-3.5-turbo",
+        messages: [{"role":"user", "content": message}],
         temperature: 0.5,
         max_tokens: 2048,
         frequency_penalty: 0,
@@ -22,7 +23,7 @@ const sendMessageToChatGPT = async (message) => {
     );
 
     if (response && response.data && response.data.choices.length > 0) {
-      const chatGptResponse = response.data.choices[0].text.trim();
+      const chatGptResponse = response.data.choices[0].message.content.trim();
       return chatGptResponse;
     } else {
       console.error("La réponse de l'API n'est pas disponible ou incorrecte");
@@ -39,14 +40,14 @@ const sendMessageToChatGPT = async (message) => {
 
 const main = async () => {
   const inquirer = require("inquirer");
-  console.log("Que puis-je pour vous ?");
+  console.log("Que puis-je faire pour vous ?");
 
   while (true) {
   const { message } = await inquirer.prompt([
     {
       type: "input",
       name: "message",
-      message: "Vous: ",
+      message: "Vous : ",
     },
   ]);
 
@@ -55,7 +56,7 @@ const main = async () => {
   }
 
   const chatGptResponse = await sendMessageToChatGPT(message);
-  console.log("ChatGPT:", chatGptResponse);
+  console.log("ChatGPT :", chatGptResponse);
   }
 };
 

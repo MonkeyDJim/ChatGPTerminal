@@ -34,7 +34,7 @@ const sendMessageToChatGPT = async (message) => {
       "Erreur lors de la récupération de la réponse de l'API :",
       error
     );
-    return "Erreur lors de la récupération de la réponse de l'API, vérifiez le code ereur.";
+    return "Erreur lors de la récupération de la réponse de l'API, vérifiez le code erreur.";
   }
 };
 
